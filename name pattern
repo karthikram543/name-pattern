@@ -1,0 +1,238 @@
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    Main loop = new Main ();
+
+    
+    loop.k ();
+     loop.a ();
+   loop.r ();
+   loop.t ();
+   loop.h ();
+  loop.i ();
+
+
+
+
+
+  }
+  
+  void k ()
+  {
+    for (int row = 1; row <= 8; row++)
+      {
+	for (int col = 1; col <= 8; col++)
+	  {
+	    if (col == 1)
+	      {
+		System.out.print ("* ");
+	      }
+	    else if (row >= 1 && row <= 4 && col == 8 - row)
+	      {
+		System.out.print ("*");
+	      }
+	    else if (row > 4 && row < 9 && col == row)
+	      {
+		System.out.print ("* ");
+	      }
+	    else
+	      {
+		System.out.print (" ");
+	      }
+	    //  System.out.print(" *");
+	  }
+	System.out.println ();
+      }
+  }
+  
+   void a(){
+       
+       for(int row=1;row<=9;row++){
+           for(int col=1;col<=9;col++){
+                if (row==1 && col>6 && col<10){
+                   System.out.print(" ");
+               }
+               else if(row==5 && col>6 && col<10){
+                   System.out.print(" ");
+               }
+               else if(row==1 && col==1){
+                   System.out.print(" ");
+               }
+            else   if(col==1 || col==6 ||row==1 || row==5){
+                   System.out.print("* ");
+               }
+               
+               else{
+                   System.out.print("  ");
+               }
+             //  System.out.print("* ");
+               
+           }
+           System.out.println();
+       }
+   }
+    void r(){
+        
+        for(int row=1;row<=5;row++){
+             
+            for(int col=1;col<=5;col++){
+                  if(row==1 && col==5){
+                    System.out.print(" ");
+                }
+             else   if(row==1 ){
+                     
+                    System.out.print("* ");
+                }
+               
+                
+                else{
+                    System.out.println();
+                }
+                 
+                 
+               
+              //  System.out.print("* ");
+            }
+           
+            System.out.println();
+             k();
+             break;
+        }
+      
+}
+void t(){
+    for(int row=1;row<=7;row++){
+        for(int col=1;col<=7;col++){
+            if(row==1 || col==4){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print("  ");
+            }
+            //System.out.print("* ");
+        }
+        System.out.println();
+    }
+}
+   void h(){
+        for(int row=1;row<=7;row++){
+        for(int col=1;col<=7;col++){
+            
+            if(col==1 || col==7 || row==4){
+                System.out.print("* ");
+            }
+            
+            else{
+                System.out.print("  ");
+            }
+        }
+        System.out.println();
+        }
+        
+    } 
+    
+    void i(){
+        
+        for(int row=1;row<=7;row++){
+            for(int col=1;col<=7;col++){
+                if(row==1 || col==7 || row==7){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print(" ");
+                }
+               
+               // System.out.print("* ");
+            }
+            System.out.println();
+        }
+        
+    }
+    void K1(){
+        k();
+    }
+    
+   
+}
+
+
+
+
+
+
+output:▶
+
+*      * 
+*     *  
+*    *   
+*   *    
+*    *    
+*     *   
+*      *  
+*       * 
+
+
+  * * * *    
+*         *       
+*         *       
+*         *       
+* * * * * *    
+*         *       
+*         *       
+*         *       
+*         *   
+
+
+* * * *  
+*      * 
+*     *  
+*    *   
+*   *    
+*    *    
+*     *   
+*      *  
+*       * 
+
+
+* * * * * * * 
+      *       
+      *       
+      *       
+      *       
+      *       
+      *   
+      
+      
+                 
+*           * 
+*           * 
+* * * * * * * 
+*           * 
+*           * 
+*           * 
+
+
+* * * * * * * 
+      * 
+      * 
+      * 
+      * 
+      * 
+* * * * * * *
+
+
+*      * 
+*     *  
+*    *   
+*   *    
+*    *    
+*     *   
+*      *  
+*       * 
+
+
+
+
+
